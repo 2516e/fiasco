@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.container{
+    width: 1440px;
+    margin: auto;
+    background-color: black;
+}
+
+.headercontent{
+    backdrop-filter: blur(10px);
+    height: 612px;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    background-image: url("../img/eggs.jpg");
+}
+
+header h1{
+    font-size: 80PX;
+}
+
+.firstrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+ul,li,a{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav li:last-child{
+    padding: 10px 3px;
+    border: 1px solid yellow;
+
+}
+
+a:hover{
+    color: yellow;
+}
+
+.secondrow{
+    text-align: center;
+}
+
+.welcome{
+    font-family: "Alex Brush", cursive;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: yellow;
+}
+
+h3{
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.maincontent{
+    width: 70%;
+    margin: auto;
+}
+
+
+.aboutus .content{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding: 0 50px ;
+}
+
+.contentimg{
+    border: 1px solid rgba(255, 255, 0, 0.5);
+    padding: 30px 0 0 30px;
+}
+
+.contentimgbis{
+    border: 1px solid rgba(255, 255, 0, 0.5);
+    padding: 30px 30px 0 0
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main a {
+    color: orange;
+}
+
+main a:hover {
+    color: yellow;
+}
+
+main h3{
+    font-family: "Alex Brush", cursive;
+    text-transform: capitalize;
+    color: yellow;
+    font-size: 40px;
+}
+
+main h2{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menucontenttext h2{
+    font-size: 100%;
+}
+
+img{
+    display: block;
+}
+
+.aboutus .content:nth-child(5){
+    flex-direction: row-reverse;
+}
+
+.menutext{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.list ul{
+    width: 80%;
+    margin: auto;
+}
+
+.list li{
+    margin: auto;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    opacity: 0.7;
+}
+
+.menucontent{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+}
+
+.menudetails:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+main p{
+    opacity: 0.7;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menudetails:nth-child(even) p{
+    text-align: right;
+}
+
+.menudetails{
+    width: 45%;
+    display: flex;
+    margin-top: 100px;
+    gap: 50px;
+}
+.menucontenttext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chef{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cheftext{
+    width: 50%;
+}
+
+.reservation{
+    background-image: url(../img/reservation.jpg);
+    text-align: center;
+}
+
+.reservation h3{
+    font-family: "Alex Brush", cursive;
+    text-transform: capitalize;
+    color: yellow;
+    font-size: 100px;
+}
+.reservation .content{
+    margin: auto;
+    width: 80%;
+}
+
+input{
+    border: white solid 1px;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0);
+    height: 40px;
+    width: 200px;
+}
+
+form{
+    display: flex;
+    justify-content: space-evenly;
+    width: 65%;
+    margin: auto;
+    opacity: 0.7;
+    padding: 15px;
+}
+
+::placeholder{
+    opacity: 1;
+    color: white;
+    text-align: center;
+}

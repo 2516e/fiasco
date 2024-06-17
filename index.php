@@ -144,19 +144,62 @@
             <form action="">
                 <label for="fullname"></label>
                 <input type="text" placeholder="FULLNAME (FOCUS)">
-                <label for="nbpersons" placeholder="FOR 2 PERSONS"></label>
-                <input list="nbpersons" name="nbpersons" id="nbpersons">
-                <datalist id="nbpersons">
-                    <option value="FOR 2 PERSONS">
-                    <option value="FOR 3 PERSONS">
-                    <option value="FOR 4 PERSONS">
-                    <option value="FOR 5 PERSONS">
-                    <option value="FOR MORE THAN 6">
-                </datalist>
+                <label for="persons"></label>
+                <select name="persons" id="persons-select">
+                    <option value="twop">FOR 2 PERSONS</option>
+                    <option value="threep">FOR 3 PERSONS</option>
+                    <option value="fourp">FOR 4 PERSONS</option>
+                    <option value="fivep">FOR 5 PERSONS</option>
+                    <option value="fivepandmore">MORE THAN 5</option>
+                </select>
                 <label for="date"></label>
                 <input type="date" id="date" name="date">
             </form>
         </div>
     </section>
+    <br>
+    <br>
+    <section class="recipes">
+        <div class="recipescontent">
+            <h3>recipes</h3>
+            <br>
+            <br>
+            <h2>we share our recipes with you</h2>
+            <br>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae animi obcaecati asperiores explicabo quam error.</p>
+            <br>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum dolorem perspiciatis recusandae quas et!</p>
+            <br>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, aspernatur. Molestias a cupiditate maiores inventore.</p>
+            <br>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque odit explicabo quas officiis mollitia tenetur.</p>
+            <br>
+            <br>
+            <br>
+            <a href="">Go to our blog...<img src="public\assets\img\arrow-right.svg" alt=""></a>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24152.2099885144!2d-73.96868809893893!3d40.827387114418144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f66e2188a29f%3A0xb408afef09e2702e!2sHarlem%2C%20New%20York%2C%20État%20de%20New%20York%2C%20États-Unis!5e0!3m2!1sfr!2sfr!4v1686907089895!5m2!1sfr!2sfr"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
 </main>
 
+<?php include __DIR__ . "/public/footer.html.php" ?>

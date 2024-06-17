@@ -28,7 +28,7 @@ header h1{
 }
 
 .firstrow{
-    display: flex;
+    display: flex; flex-wrap : wrap;
     justify-content: space-between;
     align-items: center;
     padding: 30px 50px;
@@ -37,7 +37,7 @@ header h1{
 ul,li,a{
     list-style-type: none;
     text-decoration: none;
-    display: flex;
+    display: flex; flex-wrap : wrap;
     gap: 20px;
     align-items: center;
 }
@@ -75,7 +75,7 @@ h3{
 
 
 .aboutus .content{
-    display: flex;
+    display: flex; 
     align-items: center;
     gap: 10%;
     padding: 0 50px ;
@@ -92,7 +92,7 @@ h3{
 }
 
 .text{
-    display: flex;
+    display: flex; flex-wrap : wrap;
     flex-direction: column;
     gap: 20px;
 }
@@ -149,7 +149,7 @@ img{
 }
 
 .menucontent{
-    display: flex;
+    display: flex; flex-wrap : wrap;
     flex-wrap: wrap ;
     justify-content: space-between;
 }
@@ -169,18 +169,18 @@ main p{
 
 .menudetails{
     width: 45%;
-    display: flex;
+    display: flex; flex-wrap : wrap;
     margin-top: 100px;
     gap: 50px;
 }
 .menucontenttext{
-    display: flex;
+    display: flex; flex-wrap : wrap;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .chef{
-    display: flex;
+    display: flex; flex-wrap : wrap;
     width: 90%;
     margin: auto;
     justify-content: space-between;
@@ -207,20 +207,19 @@ main p{
     width: 80%;
 }
 
-input{
+input,select{
     border: white solid 1px;
     border-radius: 10px;
     background-color: rgba(240, 248, 255, 0);
-    height: 40px;
-    width: 200px;
+    padding: 10px;
+    opacity: 0.5;
 }
 
 form{
-    display: flex;
+    display: flex; flex-wrap : wrap;
     justify-content: space-evenly;
     width: 65%;
     margin: auto;
-    opacity: 0.7;
     padding: 15px;
 }
 
@@ -228,4 +227,94 @@ form{
     opacity: 1;
     color: white;
     text-align: center;
+}
+
+.recipescontent{
+    width: 60%;
+    text-align: right;
+    margin: auto;
+}
+
+.recipescontent a{
+    display: flex; flex-wrap : wrap;
+    justify-content: end;
+}
+
+#maps{
+    width: 90%;
+    margin: auto;
+}
+
+footer{
+    background: url(../img/splash.png);
+    background-color: rgb(82, 82, 82);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    display: flex; flex-wrap : wrap;
+    align-items: end;
+    min-height: 500px;
+}
+
+.footercontent{
+    display: flex; 
+    flex-wrap : wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+}
+
+.footercontent div{
+    width: 20%;
+}
+
+.footercontent h2{
+    color: yellow;
+}
+
+.footercontent p{
+    opacity: 0.7;
+}
+
+@media (max-width: 1399.98px) {
+    .container{
+        width: 80%;
+        background-color: pink;
+    }
+    .cheftext{
+        width: 100%;
+        text-align: center;
+    }
+    .aboutus .content{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .container{
+        background-color: lightblue;
+    }
+    img:not(a>img){
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+    .footercontent,.footercontent div{
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .container{
+    width: 100%;
+    background-color: purple;
+    flex-wrap: wrap;
+}
+    .reservation{
+        font-size: 80%;
+}
 }
